@@ -26,20 +26,23 @@
                         <div class="login-text-details">
                            <h3>Log in</h3>
                         </div>
-                        <form action="message.html" method="post">
+                        <form action="#" method="post">
                            <div class="form-group">
                               <label>Your Email</label>
-                              <input class="form-control form-control-lg group_formcontrol" name="email" type="email" value="demo@fs.com">
+                              <input class="form-control form-control-lg group_formcontrol" name="email" id="email" type="email" value="demo@fs.com">
                            </div>
                            <div class="form-group">
                               <label>Password</label>
-                              <input class="form-control form-control-lg group_formcontrol" name="password" type="password" value="demo1234">
+                              <input class="form-control form-control-lg group_formcontrol" name="password" id="password" type="password" value="demo1234">
                            </div>
                            <div class="pt-1">
                               <div class="text-center">
-                                 <button class="btn newgroup_create btn-block d-block w-100" type="submit">Login</button>
+                                 <button class="btn newgroup_create btn-block d-block w-100" id="loginBtn" type="button">Login</button>
                               </div>
                            </div>
+                           <div class="alert alert-danger alert-dismissible fade hide" id="error-alert" role="alert">
+                              <span class="error-message"></span>
+                            </div>
                            <div class="text-center mt-3">
                               <span class="forgot-link">
                               <a href="forgotpassword.html" class="text-end">Forgot Password ?</a>
@@ -60,6 +63,6 @@
       <script src="assets/js/jquery-3.6.0.min.js"></script>
       <script src="assets/js/bootstrap.bundle.min.js"></script>
       <script src="assets/js/jquery.nicescroll.min.js"></script>
-      <!-- <script src="assets/js/login.js"></script> -->
+      <script src="assets/js/login.js"></script>
    </body>
 </html>
